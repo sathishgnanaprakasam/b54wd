@@ -32,4 +32,6 @@
         - git push origin master
     19. to view all the commit history
         - git log
+    20. to checkout to a particular commit
+        - git checkout commitid
 */
