@@ -25,4 +25,11 @@
     15. check the status of the local repository to know the files which are modified
         - git status
     16. add the files to the staging area
+        - git add . or git add filename
+    17. commit the files to the local repository with a message
+        - git commit -m "message"
+    18. push the files to the remote repository
+        - git push origin master
+    19. to view all the commit history
+        - git log
 */
