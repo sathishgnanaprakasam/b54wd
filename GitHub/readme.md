@@ -1,4 +1,3 @@
-/*
     1. Open terminal in mac or linux & command prompt in windows
     2. dir command - list all files and folders in current directory
     3. cd command - change directory
@@ -34,4 +33,3 @@
         - git log
     20. to checkout to a particular commit
         - git checkout commitid
-*/
