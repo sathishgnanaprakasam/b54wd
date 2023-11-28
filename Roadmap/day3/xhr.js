@@ -22,9 +22,10 @@ xhr.onload = function () {
 
     // console.log(users);
 
-    console.log(xhr.responseText);
+    for (let index in JSON.parse(xhr.responseText)) {
+        console.log(JSON.parse(xhr.responseText)[index].name.common);
+    }
 }
 
 // send the http request
 xhr.send();
-
