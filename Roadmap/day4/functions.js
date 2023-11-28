@@ -199,4 +199,18 @@
 
     input: [1, 2, 3, 4, 5], k = 2
     output: [4, 5, 1, 2, 3] (left rotation) or [3, 4, 5, 1, 2] (right rotation)
+
+    explanation:
+
+    [1, 2, 3, 4, 5]
+
+    lets do a right rotation by 2 times:
+
+    Algorithm:
+
+    for N times:
+            - remove the first element
+                let firstElement = array.shift();
+            - add it to the end of the array
+                array.push(firstElement);
 */
