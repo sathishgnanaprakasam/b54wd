@@ -214,3 +214,15 @@
             - add it to the end of the array
                 array.push(firstElement);
 */
+
+// console.log(100 ** 0.5, Math.sqrt(100));
+
+// let countChars = function (word) {
+//     return word.length;
+// }
+
+// let word = 'apple';
+
+// console.log(countChars(word));
+
+console.log(Math.floor(8.763));
