@@ -98,4 +98,22 @@ reverse(numbers);
     }
 
     json = '{"name": "sathish", "email": ""}'
+
+    controlling the index in the loop
+        index = 0, 2, 4, 6, 8, 10, 12, 14, 16, 18
+        index = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    
+    for (let index = 0; index < 10; index++);
+
+    also while loop
+
+    atleast once, i need to run the loop without checking the condition
+
+    => do while loop
+
+    for...in loop
+    => if the key has to iterate from 0 to n-1
+
+    for...of loop
+    => if the value has to iterate from 0 to n-1
 */
