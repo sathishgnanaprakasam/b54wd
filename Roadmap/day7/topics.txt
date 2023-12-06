@@ -1,0 +1,3 @@
+Map, Reduce,  Filter
+Other array methods practiced in the session
+String methods
