@@ -8,13 +8,13 @@ let xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://restcountries.com/v3.1/all');
 
-xhr.send();
-
 xhr.onload = function () {
     const countries = JSON.parse(xhr.response);
-    console.log(countries.filter(country => {
-        if (country.region == 'Asia') {
-            return true;
+    countries.forEach(country => {
+        if (country.currencies && Object.keys(country.currencies).includes('USD')) {
+            console.log(country.currencies);
         }
-    }).map(country => country.name.common));    
+    });
 }
+
+xhr.send();
