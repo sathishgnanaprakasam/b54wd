@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Demo</title>
+    </head>
+
+    <body>
+        <form onsubmit="" method="get">
+            <div>
+                <label for="name">Name: </label>
+                <input 
+                    type="text" 
+                    placeholder="type your name..." name="name" 
+                />
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                <input 
+                    type="email" 
+                    placeholder="type your email..." 
+                    name="email"
+                />
+            </div>
+
+            <div>
+                <label for="password">Password: </label>
+                <input 
+                    type="password"
+                    placeholder="type your password..."
+                    name="password"
+                />
+            </div>
+
+            <div>
+                <label for="gender">Gender: </label>
+                <input 
+                    type="radio"
+                    name="gender"
+                    value="male"
+                />
+                Male
+
+                <input 
+                    type="radio"
+                    name="gender"
+                    value="female"
+                />
+                Female
+            </div>
+
+            <div>
+                <label>Choose your interests:</label>
+                <input 
+                    type="checkbox"
+                    name="choice"
+                    value="technology"
+                />
+                Technology
+
+                <input 
+                    type="checkbox"
+                    name="choice"
+                    value="science"
+                />
+                Science
+
+                <input 
+                    type="checkbox" 
+                    name="choice" 
+                    value="finance" 
+                />
+                Finance
+
+                <input 
+                    type="checkbox" 
+                    name="choice" 
+                    value="politics" 
+                />
+                Politics
+            </div>
+
+            <div>
+                <label for="color">Favourite Color:</label>
+                <input 
+                    type="color"
+                    name="color"
+                />
+            </div>
+
+            <div>
+                <input 
+                    type="date"
+                    name="date"
+                    min="2023-12-11"
+                    max="2023-12-14"
+                />
+            </div>
+
+            <div>
+                <input 
+                    type="datetime-local"
+                />
+            </div>
+
+            <div>
+                Country: 
+                <select name="country">
+                    <option>--Select--</option>
+                    <option value="in">India</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>USA</option>
+                </select>
+            </div>
+
+            <!-- <button>Submit</button> -->
+            <input type="submit" value="Register" />
+        </form>
+    </body>
+</html>
