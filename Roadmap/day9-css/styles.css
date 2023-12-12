@@ -1,0 +1,35 @@
+/* p {
+    font-style: italic;
+    color: dodgerblue;
+} */
+
+/* always the latest css  style will be applied and it overrides the previous style */
+
+/* p {
+    color: red;
+} */
+
+/* #earthParagraph {
+    color: red;
+}
+
+#demoParagraph {
+    color: dodgerblue;
+}
+
+.italics {
+    font-style: italic;
+} */
+
+/* p {
+    color: red;
+} */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* external style */
+#paraTwo {
+    color: red !important;
+}
