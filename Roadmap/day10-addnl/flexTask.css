@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* vertical alignment */
+    /* background-color: dodgerblue; */
+    padding: 15px 0;
+    /* flex-direction: row-reverse; */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    border: 1px solid dodgerblue;
+    border-radius: 1px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: dodgerblue;
+    color: white;
+}

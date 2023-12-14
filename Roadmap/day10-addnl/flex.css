@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    height: auto;
+    border: 2px solid black;
+    justify-content: space-between; /* aligns items horizontally */
+    align-items: center; /* aligns items vertically */
+    /* flex-direction: row; */ /* default */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+}
+
+.one, .two, .three {
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    height: 10px;
+}
+
+.one {
+    background-color: red;
+    /* order: 2; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.two {
+    background-color: green;
+    /* order: 3; */
+    flex-shrink: 2;
+    /* flex-grow: 2; */
+}
+
+.three {
+    background-color: blue;
+    /* order: 1; */
+    /* flex-grow: 1; */
+    flex-shrink: 3;
+    flex-grow: 1;
+}
