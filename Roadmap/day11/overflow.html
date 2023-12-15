@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Overflow</title>
+    </head>
+    <body>
+        <div class="scroll-box">
+            Content that overflows will create a scrollbar. This is the default behavior. 
+                <ul>
+                    <li>
+                        Changing the overflow value to hidden will hide the content that overflows.
+                    </li>
+                    <li>
+                        Changing the overflow value to scroll will create a scrollbar even if there is no content that overflows.
+                    </li>
+
+                    <li>
+                        Changing the overflow value to auto will create a scrollbar only if there is content that overflows.
+                    </li>
+                </ul>
+            
+            The auto property is similar to scroll, but it only adds scrollbars when necessary.
+            The visible value is the default. It shows the content that overflows the element.
+        </div>
+
+        <style>
+            .scroll-box {
+                width: 50%;
+                height: 200px;
+                border: 1px solid red;
+                overflow: hidden;
+            }
+        </style>
+    </body>
+</html>
