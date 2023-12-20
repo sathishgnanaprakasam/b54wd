@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM DEMO Contd...</title>
+        <!-- <style>
+            .red {
+                color: red;
+            }
+
+            .italics {
+                font-style: italic;
+            }
+        </style> -->
+    </head>
+    <body>
+
+
+        <script>
+            let header = document.createElement('h1');
+            header.textContent = 'Hello World';
+            // header.setAttribute('class', 'red');
+
+            header.classList.add('red');
+            header.classList.add('italics');
+
+            // header.style.color = 'red';
+            // header.style.fontStyle = 'italic';
+
+            // header.style.removeProperty('color');
+            header.classList.remove('red');
+            header.classList.remove('italics');
+
+            // header.style.display = 'none';
+
+            // header.style.display = 'block';
+
+            document.body.appendChild(header);
+        </script>
+    </body>
+</html>
