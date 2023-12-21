@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Window Object</title>
+    </head>
+    <body>
+        <p class="alert"></p>
+        <script>
+            // console.log(window.location);
+            // console.log(window.location.href); // to get the current url address
+            // console.log(window.location.port);
+
+            // let recentSearches = ['javascript', 'react', 'angular', 'vue'];
+
+            // local storage
+            // window.localStorage.setItem('email', 'sathish@gmail.com');
+            // window.localStorage.setItem('password', '123456');
+            // window.localStorage.setItem('recentSearches', JSON.stringify(recentSearches));
+
+            // window.localStorage.removeItem('email');
+
+            // console.log(window.localStorage.getItem('email'));
+
+            // let recentSearches = JSON.parse(window.localStorage.getItem('recentSearches'));
+
+            // console.log(recentSearches);
+
+            // console.log(window.setTimeout);
+
+            // function sayHello() {
+            //     console.log('Hello is printed after 3 seconds');
+            //     // document.querySelector('.alert').innerHTML = `Hello is printed after 3 seconds`;
+            // }
+
+            // window.setTimeout(sayHello, 3000);
+
+            /* 
+                real time examples 
+                    - resend otp after 60 seconds
+                    - auto logout after 5 minutes
+                    - auto save the form data after 30 seconds
+                    - spinners
+            */
+
+            // setInterval
+            // let timer = 10;
+
+            // function countDown(){
+            //     if(timer === 0){
+            //         console.log('Time is up');
+            //     } else {
+            //         console.log(timer);
+            //         timer--;
+            //     }
+            // }
+
+            // let countDownInterval = window.setInterval(countDown, 1000);
+
+            // window.setTimeout(() => window.clearInterval(countDownInterval), 11000);
+
+            // window.alert('Hello Sathish!');
+
+            // let name = window.prompt('Enter your name');
+            // console.log(name);
+
+            let action = window.confirm('Are you sure ?');
+            if(action){
+                console.log('Yes');
+            } else {
+                console.log('No');
+            }
+        </script>
+    </body>
+</html>
