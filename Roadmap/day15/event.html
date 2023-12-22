@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Handling Contd...</title>
+    </head>
+    <body>
+        <form>
+            <textarea rows="5" cols="40" style="padding: 10px;" class="message"></textarea>
+            <button type="reset" id="send">Send</button>
+        </form>
+
+        <script>
+            let message = document.querySelector('.message');
+
+            message.addEventListener('keydown', function(event){
+                if(event.key == 'Enter'){
+                    if(event.ctrlKey){
+                        // give the new line
+                        message.value += '\n';
+                    } else {
+                        console.log('enter key is pressed');
+                        console.log('sending the message...', message.value);
+                        document.getElementById('send').click(); 
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

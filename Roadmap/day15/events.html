@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Handling</title>
+    </head>
+    <body>
+        <!-- <button onclick="handleRegister()">Register</button>
+
+        <script>
+            function handleRegister(){
+                console.log('Register button is clicked');
+            }
+        </script> -->
+
+        <!-- <button id="registerButton">Register</button> -->
+
+        <script>
+            // function handleRegisterClick(){
+            //     console.log('Register button is clicked');
+            // }
+
+            // function handleRegisterDoubleClick(){
+            //     console.log('Register button is double clicked');
+            // }
+
+            // get the reference to the button
+            // let registerButton = document.getElementById('registerButton');
+
+            // add event listener
+            // registerButton.addEventListener('click', handleRegisterClick);
+
+            // registerButton.addEventListener('dblclick', handleRegisterDoubleClick);
+        </script>
+
+        <!-- <button id="registerButton">Register</button>
+
+        <script>
+            let registerButton = document.getElementById('registerButton');
+
+            registerButton.addEventListener('mouseover', function(){
+                registerButton.style.backgroundColor = 'grey';
+                registerButton.style.color = 'white';
+                registerButton.style.border = 'none';
+                registerButton.style.borderRadius = '5px';
+            });
+
+            registerButton.addEventListener('mouseout', function(){
+                registerButton.style.backgroundColor = 'lightgrey';
+                registerButton.style.color = 'black';
+                registerButton.style.border = '1px solid black';
+                registerButton.style.borderRadius = '0px';
+            });
+        </script> -->
+
+        <!-- <button id="redirectButton">Redirect</button>
+
+        <script>
+            let redirectButton = document.getElementById('redirectButton');
+
+            redirectButton.addEventListener('click', function(){
+                window.location.href = 'https://www.google.com';
+            })
+        </script> -->
+
+        <!-- <input 
+            type="text"
+            placeholder="type here..."
+            oninput="handleInput(event)"
+        />
+
+        <script>
+            function handleInput(event){
+                console.log(event.target.value);
+            }
+        </script> -->
+
+        <div class="card">
+            <h3>Tweet Something</h3>
+            <textarea rows="5" cols="40" class="message" maxlength="100"></textarea>
+            <span class="count">0</span>
+        </div>
+
+        <style>
+            .card {
+                max-width: 450px;
+                background-color: white;
+                height: 250px;
+                margin: 50px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border: 1px solid lightsalmon; */
+                border-radius: 5px;
+                padding: 10px;
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                flex-direction: column;
+            }
+
+            .message {
+                border: 1px solid lightseagreen;
+                border-radius: 5px;
+                padding: 10px;
+                outline: none;
+            }
+
+            .count {
+                font-size: 13px;
+                color: grey;
+                margin-left: 75%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+        
+        <script>
+
+            function updateCharacterCount(event){
+                let charCount = event.target.value.length;
+                count.textContent = `${charCount}`;
+            }
+
+            // get the element references
+            let message = document.querySelector('.message');
+            let count = document.querySelector('.count');
+
+            message.addEventListener('input', updateCharacterCount);
+            
+        </script>
+    </body>
+</html>

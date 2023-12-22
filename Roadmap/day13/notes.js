@@ -55,3 +55,28 @@
                         |----p
 
 */
+
+/*
+    (45) base 10 => decimal or denary => 0-9
+
+
+    example : 1234, 5678, 9012, 32, 45, 67, 89, 10, 11, 12, 13, 14, 15, 16
+
+    (45fa4de6) base 16 => hexadecimal => 0-9, a-f
+
+
+    10 - a
+    11 - b
+    12 - c
+    13 - d
+    14 - e
+    15 - f
+
+    10f0 - decimal or binary or octal or hexadecimal
+
+
+    infix expression => 1 + 2
+    prefix expression => + 1 2
+    postfix expression => 1 2 +
+
+*/
