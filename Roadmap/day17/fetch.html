@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fetch() and then() </title>
+    </head>
+    <body>
+        <script>
+            fetch('https://restcountries.com/v3.1/all')
+                .then((response) => {
+                    return response.json();
+                })
+                .then((countries) => {
+                    console.log(countries.map(country => country.flag).join(' '));
+                })
+                .catch((error) => {
+                    console.log('error fetching countries',error);
+                })
+        </script>
+    </body>
+</html>

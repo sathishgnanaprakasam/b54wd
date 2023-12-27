@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promises and Promise States</title>
+    </head>
+    <body>
+        <h2>Promises and Promise States</h2>
+
+        <script>
+            // // create a promise object using Promise constructor
+            // let promise = new Promise((resolve, reject) => {
+            //         // randomly generate a number between 0 and 10
+            //         let randomNumber = Math.round(Math.random() * 10);
+
+            //         // print the generated random number
+            //         console.log(`Generated random number is ${randomNumber}`);
+
+            //         // depending on the generated random number, either resolve the promise or reject the promise only after 5 seconds timeout.
+            //         if (randomNumber > 5) {
+            //             setTimeout(() => {
+            //                 resolve();
+            //             }, 5000);
+            //         } else {
+            //             setTimeout(() => {
+            //                 reject();
+            //             }, 5000);
+            //         }
+            //     });
+
+            // // print the promise initial state
+            // console.log(promise);
+
+            // // attach the callback functions to the promise
+            // promise
+            //     .then(() => {
+            //         console.log('Promise resolved');
+            //     })
+            //     .catch(() => {
+            //         console.log('Promise rejected');
+            //     })
+            
+            // // print the promise final state
+            // setTimeout(() => {
+            //     console.log(promise);
+            // }, 6000);
+
+            // shortened code
+
+            // create a promise object using Promise constructor
+            // let promise = new Promise((resolve, reject) => {
+            //     resolve(); 
+            //     // reject();
+            // });
+
+            // // print the promise initial state
+            // console.log(promise);
+
+            // // attach the callback functions to the promise
+            // promise
+            //     .then(() => {
+            //         console.log('Promise resolved');
+            //     })
+            //     .catch(() => {
+            //         console.log('Promise rejected');
+            //     })
+            
+            let promise = new Promise((resolve, reject) => {
+                resolve(6);
+            });
+
+            promise
+                .then((result) => {
+                    console.log('Promise resolved', result);
+                    throw new Error();
+                })
+                .catch((result) => {
+                    console.log('Promise rejected', result);
+                })
+        </script>
+    </body>
+</html>
