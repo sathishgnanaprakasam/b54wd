@@ -2,13 +2,14 @@
 // anonymous promise object
 new Promise((resolve, reject) => {
     console.log('initial state');
-    reject();
+    resolve();
 })
     .then(() => {
         console.log('do this');
     })
     .catch(() => {
         console.log('do that');
+        throw new Error();
     })
     .then(() => {
         console.log('do this, no matter what happened before');
