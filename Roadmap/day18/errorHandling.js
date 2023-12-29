@@ -27,9 +27,13 @@
 
 // let a = 10;
 
-// a.forEach(item => console.log(item));
+// try {
+//     a.forEach(item => console.log(item));
+// } catch (error) {
+//     console.log('a is not iterable or an array', error.message);
+// }
 
-// // the following line has not executed because of the error in the above line.
+// // // the following line has not executed because of the error in the above line.
 // console.log('do this after the above line');
 
 // the above error has to be handled, so that the program can continue to execute.
@@ -54,16 +58,16 @@
 
 // console.log('do this after the above line');
 
-let a = 10;
-let b = 2;
+// let a = 10;
+// let b = 2;
 
-try {
-    if (b === 0) {
-        throw new Error('b cannot be 0');
-    } else {
-        let c = a / b;
-        console.log(c);
-    }
-} catch(error) {
-    console.log('Error occured:', error.message);
-}
+// try {
+//     if (b === 0) {
+//         throw new Error('b cannot be 0');
+//     } else {
+//         let c = a / b;
+//         console.log(c);
+//     }
+// } catch(error) {
+//     console.log('Error occured:', error.message);
+// }
