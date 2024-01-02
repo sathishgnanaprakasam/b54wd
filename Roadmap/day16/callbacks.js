@@ -121,24 +121,24 @@
 
 // callstack
 
-// function incrementBy5(number) {
-//     return number + 5;
-// }
+function incrementBy5(number) {
+    return number + 5;
+}
 
-// function multiplyBy3(number) {
-//     return number * 3;
-// }
+function multiplyBy3(number) {
+    return number * 3;
+}
 
-// function arithmetic(number, callback) {
-//     return callback(number);
-// }
+function arithmetic(number, callback) {
+    return callback(number);
+}
 
-// // let result = arithmetic(5, incrementBy5);
-// // result = arithmetic(result, multiplyBy3);
+// let result = arithmetic(5, incrementBy5);
+// result = arithmetic(result, multiplyBy3);
 
-// let result = arithmetic(arithmetic(5, incrementBy5), multiplyBy3);
+let result = arithmetic(arithmetic(5, incrementBy5), multiplyBy3);
 
-// console.log(result);
+console.log(result);
 
 /*
     stack data structure:

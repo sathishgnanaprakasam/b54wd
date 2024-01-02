@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Async and Await</title>
+    </head>
+    <body>
+
+
+        <script>
+            // asynchronous -> multiple tasks executed simultaneously
+            // synchronous -> one task waiting for the completion of another task
+            async function fetchArticles(){
+                let articles = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-12-02&sortBy=publishedAt&apiKey=58e3cb834e0c43e49b60195718a1366c');
+
+                let jsArticles = await articles.json();
+
+                console.log(jsArticles.articles);
+            }
+
+            fetchArticles();
+        </script>
+    </body>
+</html>

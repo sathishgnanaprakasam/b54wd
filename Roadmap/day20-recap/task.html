@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="form">
+            <input 
+                type="text"
+                placeholder="name..."
+                name="name"
+            />   
+            
+            <input
+                type="email"
+                placeholder="email..."
+                name="email"
+            />
+
+            <button type="submit">Add</button>
+        </form>
+
+        <div style="padding-top: 10px;">
+            <table id="table" border="1" style="border-collapse: collapse;" cellpadding="5">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            document.getElementById('form').addEventListener('submit', function(e){
+                e.preventDefault();
+
+                // console.log(this.elements['name'].value);
+                let name = this.elements['name'].value;
+                let email = this.elements['email'].value;
+
+                let table = document.getElementById('table');
+
+                // create a new row and append it to the table
+                let tr = document.createElement('tr');
+                let td1 = document.createElement('td');
+                td1.innerText = name;
+                
+                let td2 = document.createElement('td');
+                td2.innerText = email;
+
+                tr.append(td1, td2);
+                table.append(tr);
+            })
+        </script>
+    </body>
+</html>
